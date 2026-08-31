@@ -1,0 +1,16 @@
+{
+  "name": "onboarding-dwp",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "dev:next": "pnpm --filter @onboarding-dwp/next dev",
+    "dev:api": "pnpm --filter @onboarding-dwp/api dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint"
+  }
+}
