@@ -23,7 +23,7 @@ function App() {
   };
 
   const dummy = () => {
-    setCount(count);
+    setCount(count); 
   };
 
   return (
@@ -38,7 +38,7 @@ function App() {
 
       <br />
 
-      <Link href="/new">
+      <Link href="/onboarding/new">
         新しいページへ
       </Link>
     </>

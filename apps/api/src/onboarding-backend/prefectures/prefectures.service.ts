@@ -1,3 +1,5 @@
+import { Injectable } from '@nestjs/common';
+
 export type Prefecture = {
   id: number;
   name: string;
@@ -53,3 +55,10 @@ export const prefectures: Prefecture[] = [
   { id: 46, name: '鹿児島県', capital: '鹿児島市' },
   { id: 47, name: '沖縄県', capital: '那覇市' },
 ];
+
+@Injectable()
+export class PrefecturesService {
+  findAll(): Prefecture[] {
+    return prefectures;
+  }
+}

@@ -42,3 +42,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude Code の作業用コピー（別セッションのworktree）
+.claude/worktrees/
