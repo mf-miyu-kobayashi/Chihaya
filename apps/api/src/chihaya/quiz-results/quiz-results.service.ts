@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { pool } from '../../onboarding-backend/database';
+import { pool } from '../database';
 
 /** 1件ぶんの回答結果（歌の情報も一緒に取得する） */
 export type QuizResultRow = {

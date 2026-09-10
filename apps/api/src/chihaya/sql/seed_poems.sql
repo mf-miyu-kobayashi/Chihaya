@@ -2,7 +2,9 @@
 --
 -- データの出どころ:
 --   ・歌の本文・読み仮名・作者・絵札画像: https://api.aoikujira.com/hyakunin/get2.php?fmt=json
---   ・決まり字: apps/api/src/onboarding-backend/kimariji/kimariji.service.ts
+--   ・決まり字: オンボーディング課題で作成した決まり字リスト
+--     （https://github.com/mf-miyu-kobayashi/onboarding の
+--      apps/api/src/onboarding-backend/kimariji/kimariji.service.ts）
 --
 -- 実行方法（apps/api ディレクトリで）:
 --   set -a; . ./.env; set +a

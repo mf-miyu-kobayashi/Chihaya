@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-// DB接続（Pool）は既存のオンボーディング課題で作ったものをそのまま使い回す。
-// 接続を何個も作らないようにするため、新しく Pool は作らない。
-import { pool } from '../../onboarding-backend/database';
+// DB接続（Pool）は chihaya/database.ts の1つだけを使い回す。
+// 接続を何個も作らないようにするため、ここで新しく Pool は作らない。
+import { pool } from '../database';
 
 /**
  * 1首ぶんの歌のデータ。

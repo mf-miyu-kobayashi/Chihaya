@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { pool } from '../../onboarding-backend/database';
+import { pool } from '../database';
 
 /**
  * お気に入り1件ぶん。

@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { pool } from './onboarding-backend/database';
+import { pool } from './chihaya/database';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
