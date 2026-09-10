@@ -1,0 +1,15 @@
+import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+import { KimarijiModule } from './kimariji/kimariji.module';
+import { PrefecturesModule } from './prefectures/prefectures.module';
+
+@Module({
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
+    PrefecturesModule,
+    KimarijiModule,
+  ],
+})
+export class AppModule {}
